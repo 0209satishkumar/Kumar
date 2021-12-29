@@ -14,30 +14,13 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class NewTest {
+public class NewTest extends metamaskconnection  {
 	ChromeDriver driver;
-  @Test
-  public void f() throws IOException {
-	  
-	  WebDriverManager.chromedriver().setup();
-		
-		WebDriver driver = new ChromeDriver();
-			
-		driver.get("https://main.d1wxtput80cmif.amplifyapp.com/");
+	@Test(enabled = false, priority = 1 ,description = "Meta mask connection")
 
-		driver.manage().window().maximize();
+	public void checkingconnection() {
 		
-		driver.findElement(By.xpath("//*[text()='Login']")).click();
-		
-		System.out.println("Login button click successfully");
-		
-		System.out.println(driver.getCurrentUrl());
-		
-		
-		
-	  
-	  System.out.println("Satish kumar");
-	  
-	  
-  }
+		System.out.println("Connection done");
+
+	}
 }
