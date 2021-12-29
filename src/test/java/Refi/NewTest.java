@@ -11,11 +11,7 @@ public class NewTest {
   @Test
   public void f() throws IOException {
 	  
-	  Properties p = new Properties();
-
-		FileInputStream fi = new FileInputStream(".//All.properties");
-
-		p.load(fi);
+	  System.out.println("Satish kumar");
 	  
 	  
   }
