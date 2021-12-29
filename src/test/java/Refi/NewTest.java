@@ -28,6 +28,8 @@ public class NewTest {
 		driver.manage().deleteAllCookies();
 
 		driver.get("https://rapid:pineapple@staging.dnfbhl3qf3v8x.amplifyapp.com/");
+		
+		System.out.println(driver.getCurrentUrl());
 
 		driver.manage().window().maximize();
 	  

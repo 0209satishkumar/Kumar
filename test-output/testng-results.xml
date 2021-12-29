@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="1" ignored="23" total="24" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="315017" started-at="2021-12-29T13:00:41 IST" finished-at="2021-12-29T13:05:56 IST">
+  <suite name="Default suite" duration-ms="323773" started-at="2021-12-29T21:04:35 IST" finished-at="2021-12-29T21:09:58 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="315017" started-at="2021-12-29T13:00:41 IST" finished-at="2021-12-29T13:05:56 IST">
+    <test name="Default test" duration-ms="323773" started-at="2021-12-29T21:04:35 IST" finished-at="2021-12-29T21:09:58 IST">
       <class name="Refi.complete">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Refi.complete@45820e51]" name="beforeMethod" is-config="true" duration-ms="70254" started-at="2021-12-29T13:00:41 IST" finished-at="2021-12-29T13:01:51 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Refi.complete@45820e51]" name="beforeMethod" is-config="true" duration-ms="115017" started-at="2021-12-29T21:04:35 IST" finished-at="2021-12-29T21:06:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="Alltransactions()[pri:1, instance:Refi.complete@45820e51]" name="Alltransactions" duration-ms="244456" started-at="2021-12-29T13:01:51 IST" description="Doing all transactions" finished-at="2021-12-29T13:05:55 IST">
+        <test-method status="FAIL" signature="Alltransactions()[pri:1, instance:Refi.complete@45820e51]" name="Alltransactions" duration-ms="208033" started-at="2021-12-29T21:06:30 IST" description="Doing all transactions" finished-at="2021-12-29T21:09:58 IST">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Confirm'] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-DG4NUTJ', ip: '192.168.43.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+System info: host: 'DESKTOP-DG4NUTJ', ip: '192.168.0.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Satish\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61735/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e0680556f4c3580c6b3498d37d97a4c2]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Satish\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50069}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50069/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e3cba621d9e0f524f67ff1078b83d218]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Confirm'] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-DG4NUTJ', ip: '192.168.43.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+System info: host: 'DESKTOP-DG4NUTJ', ip: '192.168.0.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Satish\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:61735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61735/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e0680556f4c3580c6b3498d37d97a4c2
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Satish\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50069}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50069/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e3cba621d9e0f524f67ff1078b83d218
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 at Refi.Homepage.confirmbuttton(Homepage.java:321)
@@ -66,7 +66,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Alltransactions -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Refi.complete@45820e51]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-12-29T13:05:56 IST" finished-at="2021-12-29T13:05:56 IST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Refi.complete@45820e51]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-12-29T21:09:58 IST" finished-at="2021-12-29T21:09:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
