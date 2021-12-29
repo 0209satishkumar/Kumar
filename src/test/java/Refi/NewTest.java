@@ -267,6 +267,69 @@ public class NewTest   {
 
 		driver.switchTo().window(newTb.get(1));
 
+		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".sc-ehSDrC
+		// div:nth-of-type(1) .dAlUnL")));
+		
+		driver.navigate().refresh();
+		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#ethAmount")));
+
+		driver.findElement(By.cssSelector("input#ethAmount")).sendKeys("0.5");
+
+		// Click on procedd button
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[text()='Deposit']")));
+
+		driver.findElement(By.xpath("//*[text()='Deposit']")).click();
+
+		driver.switchTo().window(newTb.get(0));
+		
+		driver.switchTo().window(newTb.get(0));
+
+		try {
+			driver.switchTo().window(newTb.get(0));
+
+			driver.navigate().refresh();
+
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[text()='Confirm']")));
+
+			driver.findElement(By.xpath("//*[text()='Confirm']")).click();
+		}
+
+		catch (Exception E3) {
+			driver.switchTo().window(newTb.get(0));
+
+			driver.navigate().refresh();
+
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[text()='Confirm']")));
+
+			driver.findElement(By.xpath("//*[text()='Confirm']")).click();
+
+		}
+		
+		driver.switchTo().window(newTb.get(1));
+
+		try {
+
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[text()='Transaction Successful']")));
+
+			driver.findElement(By.cssSelector(
+					"#root > div.sc-bdfBQB.gNNzpt > div.sc-jeGTLq.eAmDAT > div.sc-giImIA.iMbshj > div > div.sc-kLgnNl.kyhqia"))
+					.click();
+		}
+
+		catch (Exception e) {
+
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[text()='Transaction Successful']")));
+
+			driver.findElement(By.cssSelector(
+					"#root > div.sc-bdfBQB.gNNzpt > div.sc-higWrZ.rlnin > div.sc-giImIA.iMbshj > div > div.sc-kLgnNl.iqTDII"))
+					.click();
+
+		}
+		
+		
+
 		// Connected pop up cross button
 //	wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(
 //			"#root > div.sc-bdfBQB.gNNzpt > div:nth-child(1) > div.sc-giImIA.iMbshj > div > div.sc-kLgnNl.iqTDII")));
