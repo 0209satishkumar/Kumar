@@ -71,7 +71,7 @@ public class Dashboardpage {
 				if (Actual.equals(errormessage3)) {
 					System.out.println("Test case PASS");
 				} else {
-					System.out.println("Test case FAIL");
+					System.out.println("Test case FAILs");
 				}
 			}
 
